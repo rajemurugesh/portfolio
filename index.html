@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <!-- Icon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/jpeg;base64,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"
+    />
+    <!-- Bootstrap ccdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <!-- AOS cdn link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Line Awsome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+      integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- External style sheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/skills.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-dark fixed-top">
+      <div class="container flex-lg-column">
+        <a class="navbar-brand mx-lg-auto mb-lg-4" href="#"
+          ><span class="h3 fw-bold d-block d-lg-none">Raja</span>
+          <img
+            src="./images/rajeswari.jpg"
+            alt="err"
+            class="d-none d-lg-block"
+            alt="errr"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- //NavBar -->
+
+    <!-- Content-Wrapper -->
+    <div id="content-wrapper">
+      <!-- Home -->
+      <section id="home" class="full-height">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 px-lg-5">
+              <h1 class="display-4 fw-bold" data-aos="fade-up">
+                <p class="display-6">Hey! This is</p>
+                <strong class="text-brand mb-2">Rajeswari</strong>
+                <h2 class="display-4 mb-5" data-aos="fade-up">
+                  React JS Developer
+                </h2>
+              </h1>
+              <!-- <p
+                class="lead mt-2 mb-4"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                style="text-align: justify"
+              >
+                I am Raja,presently Working in Muscat-Oman As a IT Support Engineer.
+                I give my best to my Employeer.I will share my
+                concepts and skills to my team members. I am Sincere and
+                dedicated Person , love to involve New Projects.
+              </p> -->
+              <div data-aos="fade-up" data-aos-delay="600">
+                <a
+                  href="https://www.linkedin.com/in/rajeswarimurugesh/"
+                  class="btn btn-brand me-3"
+                  target="_blank"
+                >
+                  <div class="iconbox">
+                    <i class="lab la-linkedin"></i>
+                  </div>
+                </a>
+
+                <a
+                  href="https://github.com/rajemurugesh"
+                  class="btn btn-brand me-3"
+                  target="_blank"
+                >
+                  <div class="iconbox">
+                    <i class="lab la-github"></i>
+                  </div>
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1-om6W3s0dtNxrSBfp1BExY8uJy5HprlU/view?usp=sharing"
+                  class="btn btn-brand me-3"
+                  style="font-size: 20px"
+                  target="_blank"
+                >
+                  RESUME</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //Home -->
+
+      <!-- about -->
+      <section id="about" class="full-height1 px-lg-5">
+        <div class="container">
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-12">
+              <h6 class="text-brand text-center">ABOUT</h6>
+              <h1 class="text-center">My Education & Certifications</h1>
+            </div>
+          </div>
+
+          <div class="row gy-5">
+            <div class="col-lg-12">
+              <div class="row gy-4">
+                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                  <div
+                    class="bg-base p-4 rounded-4 shadow-effect"
+                    style="background-color: #033f47"
+                  >
+                    <h4>Namaste React Live Course</h4>
+                    <p class="text-brand mb-2">NamasteDev.com</p>
+                    <p class="mb-0">12/2022-02/2023</p>
+                    <br />
+                    <a
+                      href="https://drive.google.com/file/d/1vvhPrfmJaSsUjkQ1CtjUPDloHs69RtMK/view?usp=sharing"
+                      class="btn btn-brand me-3"
+                      style="font-size: 12px"
+                      target="_blank"
+                    >
+                      CERTIFICATION LINK</a
+                    >
+                  </div>
+                </div>
+                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                  <div
+                    class="bg-base p-4 rounded-4 shadow-effect"
+                    style="background-color: #033f47"
+                  >
+                    <h4>Responsive Web Design</h4>
+                    <p class="text-brand mb-2">
+                      freecodecamp.org
+                    </p>
+                    <p class="mb-0">06/2021-12/2022</p>
+                    <br />
+                    <a
+                      href="https://www.freecodecamp.org/certification/fccc7d2816b-18b7-454d-850e-25717cefe0a2/responsive-web-design"
+                      class="btn btn-brand me-3"
+                      style="font-size: 12px"
+                      target="_blank"
+                    >
+                      CERTIFICATION LINK</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="row gy-4">
+                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                  <div
+                    class="p-4 rounded-4 shadow-effect"
+                    style="background-color: #033f47"
+                  >
+                    <h4>Bachelor of Computer Science & Engineering</h4>
+                    <p class="text-brand mb-2">
+                      Jayamatha Engineering College, Aralvaimozhi
+                    </p>
+                    <p class="mb-0">2010-2014</p>
+                  </div>
+                </div>
+
+                <!-- <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                  <div
+                    class="bg-base p-4 rounded-4 shadow-effect"
+                    style="background-color: #033f47"
+                  >
+                    <h4>Diplomo in Computer Technology</h4>
+                    <p class="text-brand mb-2">
+                      Govt Polytechnic College,Aranthangi-Pudukkottai.
+                    </p>
+                    <p class="mb-0">2005-2007</p>
+                  </div>
+                </div> -->
+
+                <!-- <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                  <div
+                    class="bg-base p-4 rounded-4 shadow-effect"
+                    style="background-color: #033f47"
+                  >
+                    <h4>Higher Secondary School Certificate</h4>
+                    <p class="text-brand mb-2">
+                      Govt.High School-Pudukkottai,Neduvasal
+                    </p>
+                    <p class="mb-0">2003-2005</p>
+                  </div>
+                </div> 
+
+                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                  <div
+                    class="bg-base p-4 rounded-4 shadow-effect"
+                    style="background-color: #033f47"
+                  >
+                    <h4>Secondary School Leaving Certificate</h4>
+                    <p class="text-brand mb-2">
+                      Govt.High School-Pudukkottai,Neduvasal
+                    </p>
+                    <p class="mb-0">2002-2003</p>
+                  </div>
+                </div>  -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //about -->
+
+      <!-- skills -->
+      <section id="skills" class="full-height1">
+        <div class="skills_section" data-aos="fade-up" data-aos-delay="600">
+            <div class="skills_head">
+                <h6 class="text-brand text-center mb-4">Skills</h6>
+                <h1>My Skills</h1>
+            </div>
+    
+            <div class="skills_main">
+                <div class="skill_logo">
+                    <div class="logo">
+                        <img src="images/html5.png" alt="HTML Logo">
+                    </div>
+                    <p>HTML</p>
+                </div>
+                <div class="skill_logo">
+                    <div class="logo">
+                        <img src="images/css3.png" alt="CSS Logo">
+                    </div>
+                    <p>CSS</p>
+                </div>
+                <div class="skill_logo">
+                    <div class="logo">
+                        <img src="images/javascript.png" alt="JavaScript Logo">
+                    </div>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill_logo">
+                    <div class="logo">
+                        <img src="images/reactjs.png" alt="React Logo">
+                    </div>
+                    <p>React.js</p>
+                </div>
+                
+                 <div class="skill_logo">
+                    <div class="logo">
+                        <img src="images/nodejs.png" alt="Node.js Logo">
+                    </div>
+                    <p>Bootstrap</p>
+                </div>
+                <div class="skill_logo">
+                    <div class="logo">
+                        <img src="images/tailwind css.png" alt="Tailwind Logo">
+                    </div>
+                    <p>Tailwind</p>
+                </div>
+                <!-- <div class="skill_logo">
+                    <div class="logo">
+                        <img src="mongodb_logo.png" alt="MongoDB Logo">
+                    </div>
+                    <p>MongoDB</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    
+
+      <!-- project -->
+
+      <section id="projects" class="full-height1 px-lg-5">
+        <div class="container">
+          <div class="row pb-4" data-abs="fade-up">
+            <div class="col-lg-12" data-aos="fade-up">
+              <h6 class="text-brand text-center">WORK</h6>
+              <h1 class="text-center">My Recent Projects</h1>
+
+              <h5 class="text-brand text-center">
+                <span style="color: white">Credentials:</span>User:Kl@gmail.com
+                | password:Kl@123456
+              </h5>
+            </div>
+          </div>
+
+          <div class="row gy-4">
+            <div class="col-md-6" data-aos="fade-up">
+              <div
+                class="card-custom rounded-2 shadow-effect"
+                style="background-color: #033f47"
+              >
+                <div class="card-custom-image rounded-2">
+                  <img
+                    class="rounded-2"
+                    src="./images/chat.jpg"
+                    alt="err"
+                    style="height: 250px"
+                  />
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4 class="text-center">NetflixGPT</h4>
+                  <p style="text-align: justify"></p>
+
+                  <div class="d-flex justify-content-center">
+                    <a
+                      href="https://github.com/Raja0514/netflix_chatgpt.git"
+                      target="_blank"
+                      class="btn btn-brand me-2"
+                      title="FrontEnd"
+                    >
+                      <div class="iconbox">
+                        <i class="lab la-github"></i>
+                      </div>
+                    </a>
+
+                    <!-- <a
+                      href="https://github.com/Raja0514/netflix_chatgpt.git"
+                      target="_blank"
+                      class="btn btn-brand me-2"
+                      title="BackEnd"
+                    >
+                      <div class="iconbox">
+                        <i class="lab la-github"></i>
+                      </div>
+                    </a> -->
+
+                    <div class="iconbaox">
+                      <a
+                        href="https://movieappgpt-81dff.web.app/"
+                        target="_blank"
+                        class="btn btn-brand me-2 p-3"
+                        >LIVE</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up">
+              <div
+                class="card-custom rounded-2 shadow-effect"
+                style="background-color: #033f47"
+              >
+                <div class="card-custom-image rounded-2">
+                  <img
+                    class="rounded-2"
+                    src="./images/blog.webp"
+                    alt="err"
+                    style="height: 250px"
+                  />
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4 class="text-center">YouTube Clone</h4>
+                  <p style="text-align: justify"></p>
+
+                  <div class="d-flex justify-content-center">
+                    <a
+                      href="https://github.com/Raja0514/youtubeclone.git"
+                      target="_blank"
+                      class="btn btn-brand me-2"
+                      title="FrontEnd"
+                    >
+                      <div class="iconbox">
+                        <i class="lab la-github"></i>
+                      </div>
+                    </a>
+
+                    <!-- <a
+                      href=""
+                      target="_blank"
+                      class="btn btn-brand me-2"
+                      title="BackEnd"
+                    >
+                      <div class="iconbox">
+                        <i class="lab la-github"></i>
+                      </div>
+                    </a> -->
+
+                    <div class="iconbaox">
+                      <a
+                        href=""
+                        target="_blank"
+                        class="btn btn-brand me-2 p-3"
+                        >LIVE</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up">
+              <div
+                class="card-custom rounded-2 shadow-effect"
+                style="background-color: #033f47"
+              >
+                <div class="card-custom-image rounded-2">
+                  <img
+                    class="rounded-2"
+                    src="./images/todo.jpeg"
+                    alt="err"
+                    style="height: 250px"
+                  />
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4 class="text-center">TODO APP</h4>
+                  <p style="text-align: justify"></p>
+
+                  <div class="d-flex justify-content-center">
+                    <a
+                      href="https://github.com/Raja0514/PizzaMern"
+                      target="_blank"
+                      class="btn btn-brand me-2"
+                      title="FrontEnd"
+                    >
+                      <div class="iconbox">
+                        <i class="lab la-github"></i>
+                      </div>
+                    </a>
+
+                    <!-- <a
+                      href="https://github.com/Raja0514/PizzaMern"
+                      target="_blank"
+                      class="btn btn-brand me-2"
+                      title="BackEnd"
+                    >
+                      <div class="iconbox">
+                        <i class="lab la-github"></i>
+                      </div>
+                    </a> -->
+
+                    <div class="iconbaox">
+                      <a
+                        href="https://todolistjshtmlcss.netlify.app/"
+                        target="_blank"
+                        class="btn btn-brand me-2 p-3"
+                        >LIVE</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up">
+              <div
+                class="card-custom rounded-2 shadow-effect"
+                style="background-color: #033f47"
+              >
+                <div class="card-custom-image rounded-2">
+                  <img
+                    class="rounded-2"
+                    src="./images/about.jpg"
+                    alt="err"
+                    style="height: 250px"
+                  />
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4 class="text-center">Limat Mern App</h4>
+                  <p style="text-align: justify"></p>
+
+                  <div class="d-flex justify-content-center">
+                    <a
+                      href="https://github.com/Raja0514/Mern_Web"
+                      target="_blank"
+                      class="btn btn-brand me-2"
+                      title="FrontEnd"
+                    >
+                      <div class="iconbox">
+                        <i class="lab la-github"></i>
+                      </div>
+                    </a>
+
+                    <!-- <a
+                      href="https://github.com/Raja0514/Mern_Backend"
+                      target="_blank"
+                      class="btn btn-brand me-2"
+                      title="BackEnd"
+                    >
+                      <div class="iconbox">
+                        <i class="lab la-github"></i>
+                      </div>
+                    </a> -->
+
+                    <div class="iconbaox">
+                      <a
+                        href="https://limatmernapp.netlify.app/"
+                        target="_blank"
+                        class="btn btn-brand me-2 p-3"
+                        >LIVE</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- //project -->
+
+      <!-- contact -->
+      <section id="contacts" class="full-height1 px-lg-5">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8 pb-4" data-aos="fade-up">
+              <h6 class="text-brand">CONTACT</h6>
+              <h1>Contact me</h1>
+            </div>
+
+            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
+              <form action="#" class="row g-lg-3 gy-3">
+                <div class="form-group col-12 d-grid">
+                  <a href="#" class="link-custom">Call: +91 9894077965</a>
+                </div>
+
+                <div class="form-group col-12 d-grid">
+                  <a
+                    href="mailto:raje14.vk@gmail.com"
+                    target="_blank"
+                    class="btn btn-brand"
+                    ><i class="las la-envelope"></i> Send-Email</a
+                  >
+                </div>
+
+                <div class="form-group col-12 d-grid">
+                  <a
+                    href="https://www.linkedin.com/in/rajeswarimurugesh/"
+                    target="_blank"
+                    class="btn btn-brand t"
+                  >
+                    <i class="lab la-linkedin"></i>
+
+                    LinkedIn
+                  </a>
+                </div>
+
+                <div class="form-group col-12 d-grid">
+                  <a
+                    href="https://github.com/Raja0514"
+                    target="_blank"
+                    class="btn btn-brand"
+                  >
+                    <i class="lab la-github"></i>
+                    GitHub
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- //contact -->
+
+      <!-- FOOTER -->
+      <footer class="py-5 px-lg-5">
+        <div class="container">
+          <div class="row gy-4 justify-content-center">
+            <div class="col-auto">
+              <p class="mb-0">
+                © Copyright 2024 | Rajeswari. All rights reserved
+              </p>
+            </div>
+            <!-- <div class="col-auto">
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/rajeswarimurugesh/" target="_blank"
+                  ><i class="lab la-linkedin-in"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/raja.mathiyazhagan"
+                  target="_blank"
+                  ><i class="lab la-facebook-f"></i
+                ></a>
+                <a href="https://dribbble.com/rakshannnnn" target="_blank"
+                  ><i class="lab la-dribbble"></i
+                ></a>
+                <a href="https://github.com/Raja0514" target="_blank"
+                  ><i class="lab la-github"></i
+                ></a>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </footer>
+      <!-- //FOOTER -->
+    </div>
+
+    <!-- //Content-Wrapper -->
+
+    <!-- Bootstrap JS CDN link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Aos CDN link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- External Stylesheet -->
+    <script src="./script/main.js"></script>
+  </body>
+</html>
